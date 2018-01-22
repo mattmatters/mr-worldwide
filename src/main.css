@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Poller+One|Raleway');
+
+html {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'Raleway', 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: #F3E2AF;
+    background-color: #682261;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1, h2, h3 {
+    font-family: 'Poller One', cursive;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+img {
+}
