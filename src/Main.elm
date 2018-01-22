@@ -50,27 +50,25 @@ hero : String -> Html Msg
 hero status =
     div
         [ parrallaxBackground "/pitbull-beer2.jpg" ]
-        [ h1 [ style [ ( "margin", "0" ) ] ] [ text "Welcome to the internet" ]
-        -- , h3 [] [ text status ]
-        -- , p [] [ text "Congratulations, you successfully located the true World Wide Web" ]
+        [ h1
+            [ class "sparkle"
+            , style [ ( "margin", "0" ) ]
+            ]
+            [ text "Welcome to the Internet" ]
         ]
+
 
 carBreak : Html Msg
 carBreak =
     div
-        [ parrallaxBackground "/pitbull-car.jpg" ] []
+        [ parrallaxBackground "/pitbull-car.jpg" ]
+        [ h2 [ class "sparkle" ] [ text "Multiple Cars" ] ]
+
 
 description : Html Msg
 description =
     div
-        [ style
-            [ ( "display", "flex" )
-            , ( "flex-direction", "row" )
-            , ( "flex-wrap", "wrap" )
-            , ( "justify-content", "center" )
-            , ( "align-content", "center" )
-            ]
-        ]
+        [ alignCenterStyle ]
         [ img
             [ imageStyle
             , src "/pitbull-zoom.gif"
@@ -87,22 +85,18 @@ description =
 tweetAt : Html Msg
 tweetAt =
     div
-        [ style
-            [ ( "display", "flex" )
-            , ( "flex-direction", "row" )
-            , ("flex-wrap", "wrap")
-            , ( "justify-content", "center" )
-            , ( "align-content", "center" )
-            , ( "background-color", "#7DBC9F" )
+        [ style [ ( "background-color", "#7DBC9F" ) ] ]
+        [ h2 [ style [ ( "text-align", "center" ), ( "margin", "0" ), ( "padding-top", "2em" ) ] ]
+            [ text "Get a car" ]
+        , div [ alignCenterStyle ]
+            [ tweet
+            , img
+                [ imageStyle
+                , style [ ( "max-height", "400px" ) ]
+                , src "/dog.png"
+                ]
+                []
             ]
-        ]
-        [ tweet
-        , img
-            [ imageStyle
-            , style [ ( "max-height", "400px" ) ]
-            , src "/dog.png"
-            ]
-            []
         ]
 
 
@@ -148,6 +142,18 @@ tweet =
             ]
         ]
         [ text "Tweet" ]
+
+
+alignCenterStyle : Attribute Msg
+alignCenterStyle =
+    style
+        [ ( "display", "flex" )
+        , ( "flex-direction", "row" )
+        , ( "flex-wrap", "wrap" )
+        , ( "justify-content", "center" )
+        , ( "align-content", "center" )
+        , ( "padding", "3em" )
+        ]
 
 
 

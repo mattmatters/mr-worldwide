@@ -25,3 +25,13 @@ h1 {
 
 img {
 }
+
+.sparkle {
+    font-size: 8em;
+    font-family:impact;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent),
+    url(http://www.myspacehippo.com/files/glitterbacks/bg345.gif) repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+}
