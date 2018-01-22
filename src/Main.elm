@@ -84,8 +84,7 @@ tweetAt =
         [ style
             [ ( "display", "flex" )
             , ( "flex-direction", "row" )
-
-            -- , ("flex-wrap", "wrap")
+            , ("flex-wrap", "wrap")
             , ( "justify-content", "center" )
             , ( "align-content", "center" )
             , ( "background-color", "#7DBC9F" )
