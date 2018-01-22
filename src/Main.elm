@@ -48,10 +48,10 @@ view model =
 hero : String -> Html Msg
 hero status =
     div
-        [ parrallaxBackground "/pitbull-beer.jpg" ]
-        [ h1 [ style [ ( "margin", "0" ) ] ] [ text "Mr. Worldwide Web" ]
-        , h3 [] [ text status ]
-        , p [] [ text "Congratulations, you successfully located the true World Wide Web" ]
+        [ parrallaxBackground "/pitbull-beer2.jpg" ]
+        [ h1 [ style [ ( "margin", "0" ) ] ] [ text "Welcome to the internet" ]
+        -- , h3 [] [ text status ]
+        -- , p [] [ text "Congratulations, you successfully located the true World Wide Web" ]
         ]
 
 
@@ -72,7 +72,8 @@ description =
             ]
             []
         , div [ style [ ( "align-self", "center" ) ] ]
-            [ h3 [] [ text "Good job Everyone!" ]
+            [ h3 [] [ text "Congratulations!" ]
+            , p [] [ text "You successfully located the true World Wide Web" ]
             , p [] [ text "You all get a free car." ]
             ]
         ]
