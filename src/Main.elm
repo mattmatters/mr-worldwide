@@ -41,6 +41,7 @@ view model =
     div []
         [ hero model.status
         , description
+        , carBreak
         , tweetAt
         ]
 
@@ -54,6 +55,10 @@ hero status =
         -- , p [] [ text "Congratulations, you successfully located the true World Wide Web" ]
         ]
 
+carBreak : Html Msg
+carBreak =
+    div
+        [ parrallaxBackground "/pitbull-car.jpg" ] []
 
 description : Html Msg
 description =
