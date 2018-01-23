@@ -11,7 +11,7 @@ body {
     font-family: 'Raleway', 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     color: #F3E2AF;
-    background-color: #682261;
+    animation: colorchange 20s;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -34,4 +34,12 @@ img {
     url(http://www.myspacehippo.com/files/glitterbacks/bg345.gif) repeat;
     background: -o-linear-gradient(transparent, transparent);
     -webkit-background-clip: text;
+}
+
+@keyframes colorchange {
+    0%   {background: red;}
+    25%  {background: yellow;}
+    50%  {background: blue;}
+    75%  {background: green;}
+    100% {background: red;}
 }
