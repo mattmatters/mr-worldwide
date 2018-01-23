@@ -40,6 +40,5 @@ install:
   - travis_retry elm-package install --yes
 
 script:
-  - elm-format --validate src tests
   - elm-app build
   - elm-app test
