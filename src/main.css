@@ -11,7 +11,7 @@ body {
     font-family: 'Raleway', 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     color: #F3E2AF;
-    animation: colorchange 20s;
+    animation: colorchange 20s infinite;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -34,6 +34,18 @@ img {
     url(http://www.myspacehippo.com/files/glitterbacks/bg345.gif) repeat;
     background: -o-linear-gradient(transparent, transparent);
     -webkit-background-clip: text;
+}
+
+.hippy-bg {
+    background: linear-gradient(341deg, #13c597, #134d3e, #d2f900, #d80cee, #ee0c46, #fd00dd);
+    background-size: 1200% 1200%;
+    animation: trippy 16s ease infinite;
+}
+
+@keyframes trippy {
+    0%{background-position:0% 5%}
+    50%{background-position:100% 96%}
+    100%{background-position:0% 5%}
 }
 
 @keyframes colorchange {

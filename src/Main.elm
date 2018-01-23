@@ -85,7 +85,7 @@ description =
 tweetAt : Html Msg
 tweetAt =
     div
-        [ style [ ( "background-color", "#7DBC9F" ) ] ]
+        [ class "hippy-bg" ]
         [ h2 [ style [ ( "text-align", "center" ), ( "margin", "0" ), ( "padding-top", "2em" ) ] ]
             [ text "Get a car" ]
         , div [ alignCenterStyle ]
