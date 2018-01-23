@@ -1,6 +1,6 @@
 # Mr. Worldwide Web
 [![Build Status](https://travis-ci.org/mattmatters/mr-worldwide.svg?branch=master)](https://travis-ci.org/mattmatters/mr-worldwide)
-
+[![Website stutus](https://img.shields.io/website-up-down-green-red/http/duckdynasty2.site.svg?label=WebsiteStatus)](http://duckdynasty2.site)
 
 This project is bootstrapped with [Create Elm App](https://github.com/halfzebra/create-elm-app).
 
