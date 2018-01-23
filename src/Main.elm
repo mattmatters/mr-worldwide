@@ -86,12 +86,19 @@ tweetAt : Html Msg
 tweetAt =
     div
         [ class "hippy-bg" ]
-        [ h2 [ style [ ( "text-align", "center" ), ( "margin", "0" ), ( "padding-top", "2em" ) ] ]
+        [ h2
+            [ style
+                [ ( "text-align", "center" )
+                , ( "margin", "0" )
+                , ( "padding-top", "2em" )
+                ]
+            ]
             [ text "Get a car" ]
         , div [ alignCenterStyle ]
             [ tweet
             , img
-                [ imageStyle
+                [ class "wobble-element"
+                , imageStyle
                 , style [ ( "max-height", "400px" ) ]
                 , src "/dog.png"
                 ]

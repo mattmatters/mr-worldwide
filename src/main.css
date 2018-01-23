@@ -42,6 +42,10 @@ img {
     animation: trippy 16s ease infinite;
 }
 
+.wobble-element {
+  animation: wobble infinite 1.5s linear;
+}
+
 @keyframes trippy {
     0%{background-position:0% 5%}
     50%{background-position:100% 96%}
@@ -54,4 +58,10 @@ img {
     50%  {background: blue;}
     75%  {background: green;}
     100% {background: red;}
+}
+
+@keyframes wobble {
+  0% {transform:rotate(20deg);}
+  50% {transform:rotate(-20deg);}
+  100% {transform:rotate(20deg);}
 }
