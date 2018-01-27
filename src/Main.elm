@@ -43,6 +43,7 @@ view model =
         , description
         , carBreak
         , tweetAt
+        , disclaimer
         ]
 
 
@@ -106,6 +107,13 @@ tweetAt =
             ]
         ]
 
+disclaimer : Html Msg
+disclaimer =
+    div
+        [ alignCenterStyle
+        , style [ ("background-color", "black")]
+        ]
+        [ p [] [ text "This is not a real site, please still tweet at Mr. Worldwide though."]]
 
 imageStyle : Attribute Msg
 imageStyle =
@@ -159,7 +167,8 @@ alignCenterStyle =
         , ( "flex-wrap", "wrap" )
         , ( "justify-content", "center" )
         , ( "align-content", "center" )
-        , ( "padding", "3em" )
+        , ( "padding-top", "3em" )
+        , ( "padding-bottom", "3em" )
         ]
 
 
