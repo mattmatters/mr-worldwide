@@ -69,7 +69,9 @@ carBreak =
 description : Html Msg
 description =
     div
-        [ alignCenterStyle ]
+        [ alignCenterStyle
+        , class "hippy-bg"
+        ]
         [ img
             [ imageStyle
             , src "/pitbull-zoom.gif"
