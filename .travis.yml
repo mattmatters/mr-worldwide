@@ -40,8 +40,8 @@ install:
   - travis_retry elm-package install --yes
 
 script:
-  - elm-app test
   - elm-app build
+  #  - elm-app test
 
 deploy:
   on:
