@@ -36,7 +36,7 @@ img {
     font-family:impact;
     -webkit-text-fill-color: transparent;
     background: -webkit-linear-gradient(transparent, transparent),
-    url(/public/glitter.gif) repeat;
+    url(/glitter.gif) repeat;
     background: -o-linear-gradient(transparent, transparent);
     -webkit-background-clip: text;
 }
